@@ -1,0 +1,24 @@
+{
+    "tasks": [
+        {
+            "label": "build",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-std=c++14",
+                "-o",
+                "main",
+                "main.cpp",
+                "-lglfw",
+                "-lglew",
+                "-framework",
+                "OpenGL"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ],
+    "version": "2.0.0"
+}
